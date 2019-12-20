@@ -11,10 +11,10 @@ const webpack = (config) => new Promise((res, rej) => {
 
 const start = async () => {
 	try {
-		await webpack(modern) // For modern browsers
-		await webpack(legacy) // For legacy browsers
+		const test = await webpack(modern) // For modern browsers
+		const test2 = await webpack(legacy) // For legacy browsers
 	} catch (e) {
-		console.error(e)
+		console.log("DID ERROR", e)
 		process.exit(1)
 	}
 }

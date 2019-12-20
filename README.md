@@ -13,4 +13,5 @@ Adding a dynamic script for supporting certain versions of Safari that are not a
 
 ## More info
 https://philipwalton.com/articles/deploying-es2015-code-in-production-today/
+
 https://medium.com/oyotech/shipping-es6-in-browsers-without-polyfill-90d1fb440a55

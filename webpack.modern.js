@@ -17,7 +17,7 @@ const modern = {
 					presets: [
 						['@babel/preset-env', {
 							modules: false,
-							useBuiltIns: 'entry',
+							useBuiltIns: 'usage',
 							corejs: { version: 3, proposals: true },
 							targets: {
 								browsers: [
@@ -25,17 +25,20 @@ const modern = {
 									'Safari >= 10.1',
 									'iOS >= 10.3',
 									'Firefox >= 54',
-									'Edge >= 15'
-								]
+									'Edge >= 15',
+								  ]
 							}
-						}]
+						}],
+						"@babel/preset-react"
 					]
 				}
 			}
 		}]
 	},
 	plugins: [
-		new HtmlWebpackPlugin(),
+		new HtmlWebpackPlugin({
+			template: "./index.html"
+		}),
 		new ScriptExtHtmlWebpackPlugin({
 			sync: 'important',
 		module: [/main.modern.*.js/]
