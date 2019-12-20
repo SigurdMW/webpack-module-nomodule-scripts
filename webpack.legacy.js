@@ -1,10 +1,9 @@
 const path = require("path")
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 var WebpackNoModulePlugin = require('webpack-nomodule-plugin').WebpackNoModulePlugin; // https://github.com/swimmadude66/webpack-nomodule-plugin
-const WebpackWatchedGlobEntries = require('webpack-watched-glob-entries-plugin');
 
 const legacy = {
-	entry: WebpackWatchedGlobEntries.getEntries([path.resolve(__dirname, './dist/main.modern.*.js')]),
+	entry: "./src/index.js",
 	output: {
 		filename: 'main.legacy.[contenthash].js',
 		path: path.resolve(__dirname, 'dist'),
