@@ -5,6 +5,9 @@ This repo contains a webpack setup with support for 2 different bundles - one fo
 <script type="text/javascript" src="main.legacy.4e7b82576df19733c0f7.js" nomodule></script>
 ```
 
+## Usage
+`npm run build` to generate the needed resources. Output will go into `dist` folder
+
 ## Why do this?
 This approach has performance benefits over having just one bundle for all browsers. The bundle for modern browsers will be smaller in size because it does not require the same amount of polyfills as the legacy bundle. With this little trick, just one of the bundles are fetched by the browser.
 

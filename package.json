@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:w": "npx rimraf ./dist && node ./webpack.build.js",
-    "build": "npx rimraf ./dist && webpack --config webpack.test.js --mode production",
+    "build": "npx rimraf ./dist && node ./webpack.build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

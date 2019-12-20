@@ -18,7 +18,7 @@ const legacy = {
 					presets: [
 						['@babel/preset-env', {
 							modules: false,
-							useBuiltIns: 'entry',
+							useBuiltIns: 'usage',
 							corejs: { version: 3, proposals: true },
 							targets: {
 								browsers: [
